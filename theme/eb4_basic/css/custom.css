@@ -1,1 +1,146 @@
 /* 여기에 작업 또는 수정할 당신의 css style을 설정하세요. (customizations) */
+.top-header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-title {
+    border: unset !important;
+}
+
+.header-title-search {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    max-width: 208px !important;
+}
+
+.eyoom-form {
+    margin: 0 !important;
+}
+
+.header-title-btn {
+    position: relative !important;
+}
+
+.navbar-nav>li.dropdown-mega-menu>.nav-link {
+    position: relative !important;
+    border: unset !important;
+    padding: 16px 10px !important;
+    color: #A445DE;
+    border-bottom: 4px solid #A445DE!important;
+}
+
+.nav-link {
+    display: flex;
+}
+
+.navbar-nav>li>.nav-link {
+    font-size: 1rem;
+    border-bottom: 4px solid transparent !important;
+}
+
+.navbar-nav>li>.nav-link:hover {
+    color: #A445DE!important;
+    border-bottom: 4px solid #A445DE!important;
+}
+
+.top-header-nav li.dropdown .dropdown-menu {
+    border-radius: 6px;
+}
+
+.top-header-nav li.dropdown .dropdown-menu a {
+    padding: 8px 16px !important;
+}
+
+.top-header-nav li.dropdown .dropdown-menu a:hover {
+    background-color: #F7F3FF;
+    color: #000;
+}
+
+#search_input {
+    border: none !important;
+    border-radius: 60px !important;
+    background-color: #F8F9FC;
+}
+
+.header-title-search > form > .input-button > .button {
+    background-color: transparent !important;
+    color: #000!important;
+    border-radius: unset !important;
+}
+
+.title-btn-count {
+    color: #A445DE;
+}
+
+.dropdown-toggle::after {
+    border: unset !important;
+    content: "\f078";
+    font-family: 'Font Awesome\ 5 Free';
+    vertical-align: middle;
+    height: auto;
+    line-height: normal;
+    margin-left: 5px;
+    width: auto;
+    color: #A445DE;
+    font-size: .75rem;
+    font-weight: 900;
+}
+
+.navbar-nav .dropdown-toggle::after {
+    content: "";
+}
+
+.navbar-nav .dropdown-menu>ul>li:hover>a {
+    background-color: #F8F9FC;
+    color: #A445DE;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.menu-icon {
+    font-size: .9rem;
+}
+
+.dropdown-menu > ul > li.dropdown-submenu {
+    padding: 0 12px;
+}
+
+.new-mega-menu > ul > li.dropdown-submenu > .dropdown-menu {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.new-mega-menu > ul > li.dropdown-submenu > .dropdown-menu > ul > li.dropdown-submenu > .dropdown-menu {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.new-mega-menu > ul > li.dropdown-submenu:first-child > a.dropdown-item {
+    background-color: #333;
+    color: #fff;
+}
+
+.dropdown-menu > ul > li.dropdown-submenu > a.dropdown-item {
+    padding: 8px 16px !important;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+
+
+.navbar-nav .dropdown-item i {
+    top: 10px !important;
+}
+
