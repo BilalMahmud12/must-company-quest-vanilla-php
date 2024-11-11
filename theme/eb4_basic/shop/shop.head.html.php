@@ -98,7 +98,7 @@ $item_view = 'zoom';
                 </div>
             </div>
             <div class="header-title">
-                <div class="container d-flex flex-row justify-content-between">
+                <div class="container d-flex flex-row justify-content-center justify-content-lg-between">
                     <?php /* ===== 사이트 로고 시작 ===== */ ?>
                     <?php if ($is_admin == 'super' && !G5_IS_MOBILE) { ?>
                         <div class="adm-edit-btn btn-edit-mode" style="top:0;left:12px;text-align:left">
@@ -131,7 +131,7 @@ $item_view = 'zoom';
                     </a>
                     <?php /* ===== 사이트 로고 끝 ===== */ ?>
 
-                    <div class="d-flex flex-row align-items-center">
+                    <div class="d-none d-lg-flex flex-row align-items-center">
                         <div>
                             <ul class="top-header-nav list-unstyled">
                                 <li><a href="<?php echo G5_SHOP_URL; ?>/cart.php">
@@ -188,7 +188,11 @@ $item_view = 'zoom';
                         </div>
                     </div>
 
-
+                    <div class="header-mobile-menu-button d-block d-lg-none">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="">P2U내역</span>
+                        </button>
+                    </div>
                 </div>
 
             </div>
@@ -269,9 +273,7 @@ $item_view = 'zoom';
                                                                         <i class="fas fa-angle-right sub-caret hidden-sm hidden-xs"></i>
                                                                     <?php } ?>
                                                                 </a>
-                                                                <?php if (isset($menu_1['submenu']) && is_array($menu_1['submenu'])) { ?>
-                                                                    <a href="#" class="cate-dropdown-open <?php if (isset($menu_1['active']) && $menu_1['active']) echo 'show'; ?>" data-bs-toggle="dropdown"></a>
-                                                                <?php } ?>
+                                                               
                                                                 <?php $index2 = $size2 = 0; ?>
                                                                 <?php if (isset($menu_1['submenu']) && is_array($menu_1['submenu'])) {
                                                                     $size2 = count($menu_1['submenu']); ?>
@@ -350,9 +352,7 @@ $item_view = 'zoom';
                                                     <?php if (isset($menu_1['me_icon']) && $menu_1['me_icon']) { ?><i class="<?php echo $menu_1['me_icon']; ?> nav-cate-icon margin-right-5"></i><?php } ?>
                                                     <?php echo $menu_1['me_name'] ?>
                                                 </a>
-                                                <?php if (isset($menu_1['submenu']) && is_array($menu_1['submenu'])) { ?>
-                                                    <a href="#" class="cate-dropdown-open <?php if (isset($menu_1['active']) && $menu_1['active']) echo 'show'; ?>" data-bs-toggle="dropdown"></a>
-                                                <?php } ?>
+                                                
                                                 <?php $index2 = $size2 = 0; ?>
                                                 <?php if (isset($menu_1['submenu']) && is_array($menu_1['submenu'])) {
                                                     $size2 = count($menu_1['submenu']); ?>

@@ -1,4 +1,7 @@
 /* 여기에 작업 또는 수정할 당신의 css style을 설정하세요. (customizations) */
+/* =============================
+   Top Header Navigation
+   ============================= */
 .top-header-nav {
     display: flex;
     flex-direction: row;
@@ -18,38 +21,60 @@
     max-width: 208px !important;
 }
 
-.eyoom-form {
-    margin: 0 !important;
-}
-
 .header-title-btn {
     position: relative !important;
 }
 
-.navbar-nav>li.dropdown-mega-menu>.nav-link {
-    position: relative !important;
-    border: unset !important;
-    padding: 16px 10px !important;
-    color: #A445DE;
-    border-bottom: 4px solid #A445DE!important;
+.eyoom-form {
+    margin: 0 !important;
 }
 
+#search_input {
+    border: none !important;
+    border-radius: 60px !important;
+    background-color: #F8F9FC;
+}
+
+/* Styling for the search form button */
+.header-title-search > form > .input-button > .button {
+    background-color: transparent !important;
+    color: #000 !important;
+    border-radius: unset !important;
+}
+
+.title-btn-count {
+    color: #A445DE;
+}
+
+/* =============================
+   Navigation Links & Menu Styling
+   ============================= */
 .nav-link {
     display: flex;
 }
 
-.navbar-nav>li>.nav-link {
+.navbar-nav > li > .nav-link {
     font-size: 1rem;
     border-bottom: 4px solid transparent !important;
 }
 
-.navbar-nav>li>.nav-link:hover {
-    color: #A445DE!important;
-    border-bottom: 4px solid #A445DE!important;
+.navbar-nav > li > .nav-link:hover {
+    color: #A445DE !important;
+    border-bottom: 4px solid #A445DE !important;
 }
 
+.navbar-nav > li.dropdown-mega-menu > .nav-link {
+    position: relative !important;
+    border: unset !important;
+    padding: 16px 10px !important;
+    color: #A445DE;
+    border-bottom: 4px solid #A445DE !important;
+}
+
+/* Dropdown menu styling */
 .top-header-nav li.dropdown .dropdown-menu {
     border-radius: 6px;
+    left: 0;
 }
 
 .top-header-nav li.dropdown .dropdown-menu a {
@@ -61,26 +86,38 @@
     color: #000;
 }
 
-#search_input {
-    border: none !important;
-    border-radius: 60px !important;
+.navbar-nav .dropdown-menu > ul > li:hover > a {
     background-color: #F8F9FC;
-}
-
-.header-title-search > form > .input-button > .button {
-    background-color: transparent !important;
-    color: #000!important;
-    border-radius: unset !important;
-}
-
-.title-btn-count {
     color: #A445DE;
+}
+
+/* Styling for active and hover states */
+.navbar-nav .dropdown-menu li a.active,
+.navbar-nav .dropdown-menu li a:hover,
+.navbar-nav .dropdown-menu > ul > .mega-menu-col ul > li:hover > a,
+.navbar-nav .dropdown-menu > ul > li:hover > a {
+    background-color: #F8F9FC;
+    color: #A445DE;
+}
+
+.navbar-nav .dropdown-menu li a.active,
+.navbar-nav .dropdown-menu li a,
+.navbar-nav .dropdown-menu > ul > .mega-menu-col ul > li > a,
+.navbar-nav .dropdown-menu > ul > li > a {
+    padding: 8px 16px !important;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.navbar-nav li {
+    padding: 0 12px;
 }
 
 .dropdown-toggle::after {
     border: unset !important;
     content: "\f078";
-    font-family: 'Font Awesome\ 5 Free';
+    font-family: 'Font Awesome 5 Free';
     vertical-align: middle;
     height: auto;
     line-height: normal;
@@ -92,55 +129,130 @@
 }
 
 .navbar-nav .dropdown-toggle::after {
-    content: "";
+    content: ""; /* Hides the default arrow */
 }
 
-.navbar-nav .dropdown-menu>ul>li:hover>a {
-    background-color: #F8F9FC;
-    color: #A445DE;
-}
-
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-}
-
+/* Menu icon styling */
 .menu-icon {
     font-size: .9rem;
 }
 
+/* =============================
+   Mega Menu & Submenus
+   ============================= */
 .dropdown-menu > ul > li.dropdown-submenu {
     padding: 0 12px;
 }
 
-.new-mega-menu > ul > li.dropdown-submenu > .dropdown-menu {
-    border-left: none !important;
-    border-right: none !important;
-}
-
+.new-mega-menu > ul > li.dropdown-submenu > .dropdown-menu,
 .new-mega-menu > ul > li.dropdown-submenu > .dropdown-menu > ul > li.dropdown-submenu > .dropdown-menu {
     border-left: none !important;
     border-right: none !important;
 }
 
-.new-mega-menu > ul > li.dropdown-submenu:first-child > a.dropdown-item {
+.new-mega-menu > ul > li.dropdown-submenu:hover > a.dropdown-item {
     background-color: #333;
     color: #fff;
 }
 
-.dropdown-menu > ul > li.dropdown-submenu > a.dropdown-item {
+.dropdown-menu > ul > li.dropdown-submenu > a.dropdown-item,
+.dropdown-menu > ul > li.dropdown-submenu > .dropdown-menu > ul > li.dropdown-submenu > a.dropdown-item {
     padding: 8px 16px !important;
     display: flex;
     align-items: center;
     border-radius: 6px;
 }
 
-
-
+/* Dropdown items alignment */
 .navbar-nav .dropdown-item i {
-    top: 10px !important;
+    top: 12px !important;
 }
 
+/* =============================
+   Header Mobile Menu Button
+   ============================= */
+.header-mobile-menu-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-10px, -50%);
+}
+
+.header-mobile-menu-button > button {
+    color: #A445DE;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* =============================
+   Footer Styling
+   ============================= */
+footer {
+    background-color: #17191E;
+    padding: 20px 0;
+}
+
+.footer-nav {
+    width: unset !important;
+}
+
+.footer-nav > a {
+    color: #fff !important;
+}
+
+.footer-cont-info,
+.footer-copyright,
+.footer-info-group > .top-line > span,
+.footer-info-group > .bottom-line > span {
+    text-align: unset !important;
+}
+
+.footer-copyright {
+    padding: unset !important;
+}
+
+.footer-copyright > span {
+    color: #9DA6BB !important;
+}
+
+.footer-info-group > .top-line > span {
+    color: #fff !important;
+}
+
+.footer-info-group > .bottom-line > span {
+    color: #9DA6BB !important;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding: 30px 0;
+}
+
+.footer-bottom > .footer-nav-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-bottom > .footer-nav-bottom > a {
+    color: #fff !important;
+}
+
+/* =============================
+   Responsive Design
+   ============================= */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: unset;
+    }
+}
